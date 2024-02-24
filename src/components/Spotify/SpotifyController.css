@@ -1,0 +1,112 @@
+#spotify {
+  max-width: 275px;
+  max-height: 110px;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#songInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#system {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 150px;
+}
+
+p#songName {
+  font-size: 17.5px;
+  color: white;
+  font-weight: 700;
+  padding-top: 10px;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p#artist {
+  font-size: 10px;
+  color: #adadad;
+  font-weight: 500;
+  padding-top: 5px;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p {
+  font-size: 10px;
+  color: #adadad;
+  font-weight: 500;
+}
+
+#spotify button#auth {
+  width: auto;
+  height: auto;
+}
+
+#spotify button#step {
+  color: grey;
+  background-color: #ffffff00;
+}
+
+#spotify button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#spotify button#play:hover {
+  background-color: #1ed760;
+}
+
+#progressBar {
+  width: 100%;
+  height: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden; /* Added overflow property */
+}
+
+#loader {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: width 0.2s ease-in-out; /* Added transition property for smooth animation */
+}
+
