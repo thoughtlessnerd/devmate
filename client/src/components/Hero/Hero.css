@@ -1,0 +1,56 @@
+.hero {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .canvas-container {
+    position: relative;
+    width: 50vw;
+    height: 80vh;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
+  .react-three-fiber-orbitcontrols {
+    outline: none;
+  }
+  
