@@ -6,12 +6,12 @@ import DashBoard from "./pages/DashBoard";
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home/>}>
-        <Route index element={<Home />} />
-        <Route path="/dashboard" element={<DashBoard />} />
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="Dashboard" element={<DashBoard />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
