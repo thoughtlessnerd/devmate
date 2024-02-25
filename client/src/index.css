@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-slate-100 text-xl;
+}
+
+.nav-blob {
+  @apply bg-white flex items-center justify-center gap-2.5 transition-all duration-[0.3s] ease-[ease] px-2.5 py-2.5 rounded-lg;
+}
+
+.settingsOption {
+  @apply hover:bg-slate-200;
+}
