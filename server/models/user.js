@@ -18,6 +18,12 @@ const userSchema = new mongoose.Schema(
       required: [true, "can't be blank"],
       match: [/^[a-zA-Z0-9]+$/, "is invalid"],
     },
+    github: {
+      type: String,
+    },
+    leetcode: {
+      type: String,
+    },
     email: {
       type: String,
       lowercase: true,
@@ -38,7 +44,7 @@ const userSchema = new mongoose.Schema(
     },
     tasks: {
       type: Object,
-    }
+    },
   },
   { timestamps: true }
 );

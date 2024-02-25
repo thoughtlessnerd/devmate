@@ -73,12 +73,14 @@ class userService {
   };
   updateTasks = async (data) => {
     try {
-      const user = await this.userRepository.updateUserByID(data.userID, {tasks: data.tasks});
+      const user = await this.userRepository.updateUserByID(data.userID, {
+        tasks: data.tasks,
+      });
       return user._doc;
     } catch (error) {
       throw error;
     }
-  }
+  };
 }
 
 module.exports = userService;

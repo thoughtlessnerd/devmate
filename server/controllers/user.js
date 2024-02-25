@@ -21,6 +21,8 @@ class userController {
         password: req.body.password,
         username: req.body.username,
         userID: v4(),
+        github: req.body.github || null,
+        leetcode: req.body.leetcode || null,
       };
       // console.log(req.body);
       const user = await this.service.signUp(data);
@@ -48,6 +50,8 @@ class userController {
         email: req.body.email,
         username: req.body.username,
         userID: req.user,
+        github: req.body.github || null,
+        leetcode: req.body.leetcode || null,
       };
       const user = await this.service.updateUser(data);
       res.status(200).json({ message: "updated", success: true, data: user });
@@ -78,7 +82,9 @@ class userController {
         userID: req.user,
       };
       const user = await this.service.updateTasks(data);
-      res.status(200).json({ message: "task updated", success: true, data: user });
+      res
+        .status(200)
+        .json({ message: "task updated", success: true, data: user });
     } catch (error) {
       res.status(400).json({ error: error.message });
     }
